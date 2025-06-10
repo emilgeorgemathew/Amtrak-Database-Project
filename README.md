@@ -1,6 +1,3 @@
-# Amtrak-Database-Project
-
- 
 # DataForge: Analyzing Amtrak Performance Data 🚆
 
 # Authors: 
