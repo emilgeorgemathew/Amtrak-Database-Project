@@ -39,7 +39,6 @@ StationMetrics(stationCode, stationMetric, stationMetricYear, stationMetricValue
 Referential integrity and cascading rules are enforced to maintain data consistency during updates and deletions.
 
 # Contents 📁
-File	Description
 
 BUDT703_Project_0507_13_DDL.sql	SQL script for creating and populating the Amtrak database schema.
 
