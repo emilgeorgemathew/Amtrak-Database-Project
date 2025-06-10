@@ -40,10 +40,15 @@ Referential integrity and cascading rules are enforced to maintain data consiste
 
 # Contents 📁
 File	Description
+
 BUDT703_Project_0507_13_DDL.sql	SQL script for creating and populating the Amtrak database schema.
+
 BUDT_Project_0507_13_DML.sql	SQL analysis queries for extracting key business insights.
+
 BUDT703_Project_0507_13_Design.docx	Project proposal with design rationale, schema, and use case documentation.
+
 BUDT703_Project_0507_13_Slides.pptx	Final presentation with insights, observations, and recommendations.
+
 BUDT_Project_0507_13_Tableau.twb	Tableau workbook with interactive dashboards and visualizations.
 
 # Key Insights 📌
