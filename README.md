@@ -34,17 +34,17 @@ Present insights on budget allocations (Design, Construction, Deployment) over t
 4. Henry Kangten - Data visualization and reports.
 
 # Data Source and Preprocessing
-1. **Amtrak Data**;
+1. **Amtrak Data**:
 - Merged from real Amtrak references and [fact sheets](https://www.amtrak.com/state-fact-sheets).
 - Sourced and merged data from multiple data sources like Amtrak stats and supplementary info (state codes, station codes and city).
 - All suplementary sources were merged onto the main dataset to handle missing data points like station codes or city names.
 - Reformatted and standardized into a single Excel file: Amtrack.xlsx.
 - 
-# 2. **Schema Design**:
+2. **Schema Design**:
 - Designed a normalized schema with x main tables: State, Station, Ridership, Employee, GuestRewards.
 - Used primary/foreign keys and cascading referential integrity rules.
 
-# 3. **Import to SQL**:
+3. **Import to SQL**:
 - Each sheet was a table in the database.
 - Used DML, DCL queries to create tables for data and management.
 
