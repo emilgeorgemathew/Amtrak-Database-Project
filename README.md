@@ -115,11 +115,17 @@ Leverage high-ridership states to pilot new service improvements or technologies
 
 Reassess procurement efficiency in top-spending states to reduce costs.
 
-#Tech Stack
+# Tech Stack
 
 Microsoft SQL Server (T-SQL)
 Excel (Data Preprocessing - Cleaning & Formatting)
 Tableau (Business Intelligence and Data Visualization )
 GitHub (Version Control & Publishing)
+
+# Credits
+1. Pranav Praveen Nair - Data Preprocessing and Database Design.
+2. Emil George Mathew  - Data Preprocessing, Database Implementation & Querying (including DML, DCL, DQL), business problem formation, leadership and slides.
+3. Abhishek Bhosale - SQL queries, leadership, business problem formation and data visualization.
+4. Henry Kangten - Data visualization and reports.
 
 Thank you for checking out this project.
