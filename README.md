@@ -1,9 +1,7 @@
 # DataForge: Analyzing Amtrak Performance Data 🚆
 
----
-
 # Table of content
-1. Overview
+1. [Overview](Overview)  
 2. Authors
 3. Data Source
 4. Objectives
