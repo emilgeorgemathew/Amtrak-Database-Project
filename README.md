@@ -22,11 +22,9 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 
 
 # Project Objectives 🎯
-Design a normalized and referentially-integrated SQL database for Amtrak operations.
-
-Analyze ridership trends, procurement distribution, OTP by route types, and employment budgets.
-
-Provide actionable recommendations for Amtrak management using data storytelling in Tableau.
+- Design a normalized and referentially-integrated SQL database.
+- Analyze ridership trends, procurement distribution, OTP by route types, and employment budgets. 
+- Provide actionable recommendations for Amtrak management by creatingusing data storytelling in Tableau.
 
 Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
 # Authors: 
