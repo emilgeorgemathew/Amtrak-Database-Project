@@ -1,12 +1,36 @@
 # DataForge: Analyzing Amtrak Performance Data 🚆
 
-# Authors: 
-Pranav Praveen Nair, Emil George Mathew, Abhishek Bhosale, Henry Kangten
+---
 
-# Course: BUDT 703 | University of Maryland
+# Table of content
+1. Overview
+2. Authors
+3. Data Source
+4. Objectives
+5. Database Design
+6. File Description
+7. Recommendations
+8. Tech Stack
 
 # Overview
 DataForge is a comprehensive data analysis project built around Amtrak’s station-level and state-level performance data from 2021 to 2023. Using a custom-designed relational database and insightful SQL queries, the project uncovers key operational patterns and performance bottlenecks related to ridership, budgeting, on-time performance (OTP), procurement, and employment spending across U.S. states.
+
+This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Performance and Employees to analyze:
+
+1
+2
+3
+
+Goal: Help decision-makers see where Amtrak can better allocate staff and improve loyalty programs.
+
+# Authors: 
+1. Pranav Praveen Nair - Data Preprocessing and Database Design.
+2. Emil George Mathew  - Data Preprocessing, Database Implementation & Querying (including DML, DCL, DQL), business problem formation, leadership and slides.
+3. Abhishek Bhosale - SQL queries, leadership, business problem formation and data visualization.
+4. Henry Kangten - Data visualization and reports.
+
+# Data Source
+Merged from real Amtrak references and [fact sheets](https://www.amtrak.com/state-fact-sheets).
 
 # Project Objectives 🎯
 Design a normalized and referentially-integrated SQL database for Amtrak operations.
@@ -80,3 +104,12 @@ Improve OTP on long-distance routes through better scheduling and maintenance.
 Leverage high-ridership states to pilot new service improvements or technologies.
 
 Reassess procurement efficiency in top-spending states to reduce costs.
+
+#Tech Stack
+
+Microsoft SQL Server (T-SQL)
+Excel (Data Preprocessing - Cleaning & Formatting)
+Tableau (Business Intelligence and Data Visualization )
+GitHub (Version Control & Publishing)
+
+Thank you for checking out this project.
