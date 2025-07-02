@@ -16,9 +16,9 @@ DataForge is a comprehensive data analysis project built around Amtrak’s stati
 ## Overview
 This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Performance and Employees to analyze:
 
-1. [cite_start]Performance of Amtrak stations using various performance metrics like ridership, on-time performance, and budgeting across different stations in various states[cite: 10].
-2. [cite_start]Amtrak's last 3 years of data to provide insights and recommendations on budgeting and costs using on-time performance and ridership for various stations across cities[cite: 16, 17].
-3. [cite_start]Performance, recommendations, and storytelling using intuitive visualizations and data-driven decisions[cite: 18, 19].
+1. Performance of Amtrak stations using various performance metrics like ridership, on-time performance, and budgeting across different stations in various states.
+2. Amtrak's last 3 years of data to provide insights and recommendations on budgeting and costs using on-time performance and ridership for various stations across cities.
+3. Performance, recommendations, and storytelling using intuitive visualizations and data-driven decisions.
 
 
 # Project Objectives 🎯
