@@ -2,21 +2,24 @@
 DataForge is a comprehensive data analysis project built around Amtrak’s station-level and state-level performance data from 2021 to 2023. Using a custom-designed relational database and insightful SQL queries, the project uncovers key operational patterns and performance bottlenecks related to ridership, budgeting, on-time performance (OTP), procurement, and employment spending across U.S. states.
 
 # Table of content
-1. [Overview](Overview)  
-2. Authors
-3. Data Source
-4. Objectives
-5. Database Design
-6. File Description
-7. Recommendations
-8. Tech Stack
+1. [Overview](#overview)
+2. [Data Source and Preprocessing](#data-source-and-preprocessing)
+3. [Project Objectives](#project-objectives)
+4. [Database Design](#database-design)
+5. [Contents](#contents)
+6. [Key Insights](#key-insights)
+7. [Visualizations](#visualizations)
+8. [Recommendations](#recommendations)
+9. [Tech Stack](#tech-stack)
+10. [Credits](#credits)
 
 ## Overview
 This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Performance and Employees to analyze:
 
-1
-2
-3
+1. [cite_start]Performance of Amtrak stations using various performance metrics like ridership, on-time performance, and budgeting across different stations in various states[cite: 10].
+2. [cite_start]Amtrak's last 3 years of data to provide insights and recommendations on budgeting and costs using on-time performance and ridership for various stations across cities[cite: 16, 17].
+3. [cite_start]Performance, recommendations, and storytelling using intuitive visualizations and data-driven decisions[cite: 18, 19].
+
 
 # Project Objectives 🎯
 Design a normalized and referentially-integrated SQL database for Amtrak operations.
