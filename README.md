@@ -24,15 +24,15 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 # Project Objectives 🎯
 - Design a normalized and referentially-integrated SQL database.
 - Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
-- Create intreactive visualizations to convey insights from the raw data by connecting the database to Tableau for Business Intelligence(BI). 
+- Create interactive visualizations to convey insights from the raw data by connecting the database to Tableau for Business Intelligence(BI). 
 - Provide actionable recommendations for Amtrak stakeholders by storytelling and presenting the visualizations.
 - Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
 
-# Data Source and Preprocessing
+# Data Source and Pre-processing
 1. **Amtrak Data**:
 - Merged from real Amtrak references and [fact sheets](https://www.amtrak.com/state-fact-sheets).
 - Sourced and merged data from multiple data sources like Amtrak stats and supplementary info (state codes, station codes and city).
-- All suplementary sources were merged onto the main dataset to handle missing data points like station codes or city names.
+- All supplementary sources were merged onto the main dataset to handle missing data points like station codes or city names.
 - Reformatted and standardized into a single Excel file: Amtrak.xlsx.
 
 2. **Schema Design**:
