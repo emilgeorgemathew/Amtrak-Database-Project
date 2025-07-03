@@ -35,7 +35,7 @@ Present insights on budget allocations (Design, Construction, Deployment) over t
 - Sourced and merged data from multiple data sources like Amtrak stats and supplementary info (state codes, station codes and city).
 - All suplementary sources were merged onto the main dataset to handle missing data points like station codes or city names.
 - Reformatted and standardized into a single Excel file: Amtrack.xlsx.
-- 
+
 2. **Schema Design**:
 - Designed a normalized schema with x main tables: State, Station, Ridership, Employee, GuestRewards.
 - Used primary/foreign keys and cascading referential integrity rules.
@@ -45,8 +45,18 @@ Present insights on budget allocations (Design, Construction, Deployment) over t
 - Used DML, DCL queries to create tables for data and management.
 
 # Entity-Relationship Diagram(ERD)
-This is the final ERD design:
+Here's a visual representation of the final schema design:
 ![ERD](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/ERD.png)
+
+State: Central dimension table with stateCode as primary key, containing state-level geographic data
+Station: Connected to State via "Located" relationship, contains station-level operational data
+Route: Dimension table with route classifications (routeType) for performance analysis
+Budget: Financial planning data with budget types and yearly allocations
+OnTimePerformance: Fact table linking Route and Station with temporal performance metrics (otpYear, otpValue)
+AllocatedBudget: Bridge table connecting Budget to Station for resource allocation tracking
+StationMetrics: Comprehensive fact table containing station-level performance metrics over time
+StateMetrics: Aggregated state-level metrics for high-level analysis and reporting
+
 
 # Database Design 🧩
 The project is based on a well-structured relational model with the following key entities:
