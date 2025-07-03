@@ -28,11 +28,6 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 - Provide actionable recommendations for Amtrak stakeholders by storytelling and presenting the visualizations.
 
 Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
-# Authors: 
-1. Pranav Praveen Nair - Data Preprocessing and Database Design.
-2. Emil George Mathew  - Data Preprocessing, Database Implementation & Querying (including DML, DCL, DQL), business problem formation, leadership and slides.
-3. Abhishek Bhosale - SQL queries, leadership, business problem formation and data visualization.
-4. Henry Kangten - Data visualization and reports.
 
 # Data Source and Preprocessing
 1. **Amtrak Data**:
