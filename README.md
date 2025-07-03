@@ -44,6 +44,9 @@ Present insights on budget allocations (Design, Construction, Deployment) over t
 - Each sheet was a table in the database.
 - Used DML, DCL queries to create tables for data and management.
 
+# Entity-Relationship Diagram(ERD)
+This is the final ERD design:
+![ERD](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/ERD.png)
 
 # Database Design 🧩
 The project is based on a well-structured relational model with the following key entities:
