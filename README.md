@@ -1,7 +1,7 @@
-# DataForge: Analyzing Amtrak Performance Data 🚆
+## DataForge: Analyzing Amtrak Performance Data 🚆
 DataForge is a comprehensive SQL database project that designs a normalized, referentially-integrated database to analyze Amtrak operations across U.S. states. Through advanced data modeling and interactive Business Intelligence visualizations, this project delivers actionable insights on ridership trends, procurement distribution, on-time performance, and employment budgets to support strategic decision-making.
 
-# Getting Started 🚀
+## Getting Started 🚀
 
 To set up and explore the Amtrak Performance Database, follow these steps:
 
@@ -21,7 +21,7 @@ To set up and explore the Amtrak Performance Database, follow these steps:
     * Ensure Tableau is connected to your SQL Server database where you set up the project. You may need to update the connection details within Tableau to point to your local database.
 
 
-# Table of contents
+## Table of contents
 
 1. [Overview](#overview)
 2. [Data Source and Pre-processing](#data-source-and-pre-processing)
@@ -44,14 +44,14 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 
 ![Pictures](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/Project%20Diagram.png)
 
-# Project Objectives 🎯
+## Project Objectives 🎯
 - Design a normalized and referentially-integrated SQL database.
 - Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
 - Create interactive visualizations to convey insights from the raw data by connecting the database to Tableau for Business Intelligence(BI). 
 - Provide actionable recommendations for Amtrak stakeholders by storytelling and presenting the visualizations.
 - Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
 
-# Data Source and Pre-processing
+## Data Source and Pre-processing
 1. **Amtrak Data**:
 - Merged from real Amtrak references and [fact sheets](https://www.amtrak.com/state-fact-sheets).
 - Sourced and merged data from multiple data sources like Amtrak stats and supplementary info (state codes, station codes and city).
@@ -66,7 +66,7 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 - Each sheet in the final Excel file was a table in the database.
 - Used DML, DCL queries to create tables for data and management.
 
-# Entity-Relationship Diagram(ERD)
+## Entity-Relationship Diagram(ERD)
 Here's a visual representation of the final schema design:
 ![ERD](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/ERD.png)
 
@@ -79,7 +79,7 @@ Here's a visual representation of the final schema design:
 - **Station Metrics**: Comprehensive fact table containing station-level performance metrics over time
 - **State Metrics**: Aggregated state-level metrics for high-level analysis and reporting
 
-# Database Design 🧩
+## Database Design 🧩
 The project is based on a well-structured relational model with the following key entities:
 
 State(stateCode, stateName) 
@@ -100,7 +100,7 @@ StationMetrics(stationCode, stationMetric, stationMetricYear, stationMetricValue
 
 Referential integrity and cascading rules are enforced to maintain data consistency during updates and deletions.
 
-# Contents 📁
+## Contents 📁
 
 BUDT703_Project_0507_13_DDL.sql	SQL script for creating and populating the Amtrak database schema.
 
@@ -112,7 +112,7 @@ BUDT703_Project_0507_13_Slides.pptx	Final presentation with insights, observatio
 
 BUDT_Project_0507_13_Tableau.twb	Tableau workbook with interactive dashboards and visualizations.
 
-# Key Insights 📌
+## Key Insights 📌
 Top Ridership States: New York and California lead Amtrak ridership, indicating crucial hubs.
 
 On-Time Performance: Northeast Corridor has the highest OTP, while Long-Distance routes lag.
@@ -123,7 +123,7 @@ Procurement Trends: California, New York, and Pennsylvania account for the highe
 
 Employment Spend: Varies widely by state, with implications for workforce optimization.
 
-# SQL Query, visualizations, findings and impact 📊
+## SQL Query, visualizations, findings and impact 📊
 
 Our interactive Tableau dashboards provide key insights into Amtrak's performance:
 
@@ -222,7 +222,7 @@ ORDER BY Total_Procurement_Spending DESC;
     * There are significant regional disparities in spending, with major coastal states showing high expenditures, while many central states have considerably lower spending.
 * **Significance:** Analyzing procurement spending trends across states can identify opportunities for cost efficiencies, strategic resource reallocation to potentially underfunded regions, and optimization of procurement practices based on the observed patterns in high-spending states.
 
-# Recommendations
+## Recommendations
 - Optimize Construction Budget: Review escalating "Construction" allocations (post-2020) for operational benefits and ensure balanced funding with "Design" and "Deployment" phases for efficient project pipelines.
 
 - Improve Long-Distance OTP: Implement targeted interventions like infrastructure upgrades, optimized scheduling, and enhanced maintenance for "Long Distance" routes to boost their on-time performance.
@@ -233,14 +233,14 @@ ORDER BY Total_Procurement_Spending DESC;
 
 - Audit Procurement Spending: Conduct comprehensive audits in high-expenditure states (California, New York, Pennsylvania) for cost efficiencies and evaluate procurement needs in lower-spending states for potential resource redistribution or optimized practices.
 
-# Tech Stack
+## Tech Stack
 
 Microsoft SQL Server (T-SQL)
 Excel (Data Preprocessing - Cleaning & Formatting)
 Tableau (Business Intelligence and Data Visualization )
 GitHub (Version Control & Publishing)
 
-# Credits
+## Credits
 1. Pranav Praveen Nair - Data Preprocessing and Database Design.
 2. Emil George Mathew  - Data Preprocessing, Database Implementation & Querying (including DML, DCL, DQL), business problem formation, leadership and slides.
 3. Abhishek Bhosale - SQL queries, leadership, business problem formation and data visualization.
