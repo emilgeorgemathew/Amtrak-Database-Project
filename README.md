@@ -145,8 +145,7 @@ SELECT Budget_Year, Budget_Type,
 Total_Allocated_Budget
 FROM HighestBudgetPerYear
 WHERE BudgetRank = 1
-ORDER BY Budget_Year ASC;
-[cite_start]```
+ORDER BY Budget_Year ASC;```
 
 * **Insights:**
     * Budget allocations vary significantly year-over-year.
