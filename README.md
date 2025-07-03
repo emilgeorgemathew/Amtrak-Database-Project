@@ -122,11 +122,32 @@ Procurement Trends: California, New York, and Pennsylvania account for the highe
 
 Employment Spend: Varies widely by state, with implications for workforce optimization.
 
-# Visualizations 📊
+# SQL Query, visualizations, findings and impact 📊
 
 Our interactive Tableau dashboards provide key insights into Amtrak's performance:
 
 **1. Budget Allocation by Type (2016-2023):**
+
+**Query**:
+```sql
+WITH YearlyBudget AS
+( SELECT b.budgetPlanYear AS Budget_Year,
+b.budgetType AS Budget_Type,
+SUM(ab.allocatedBudget) AS Total_Allocated_Budget
+FROM [Amtrak.Budget] b JOIN [Amtrak.AllocatedBudget] ab
+ON b.budgetYearID = ab.budgetYearID
+GROUP BY b.budgetPlanYear, b.budgetType ),
+HighestBudgetPerYear AS
+( SELECT Budget_Year, Budget_Type, Total_Allocated_Budget,
+RANK() OVER (PARTITION BY Budget_Year ORDER BY Total_Allocated_Budget DESC) AS BudgetRank
+FROM YearlyBudget )
+SELECT Budget_Year, Budget_Type,
+Total_Allocated_Budget
+FROM HighestBudgetPerYear
+WHERE BudgetRank = 1
+ORDER BY Budget_Year ASC;
+[cite_start]```
+
 * **Insights:**
     * Budget allocations vary significantly year-over-year.
     * "Construction" dominated the highest allocated budget from 2020 to 2023, peaking notably in 2022 with $95.77 million, indicating a strong focus on infrastructure projects.
