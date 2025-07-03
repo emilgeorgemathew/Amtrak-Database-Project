@@ -7,7 +7,7 @@ To set up and explore the Amtrak Performance Database, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/emilgeorgemathew/Amtrak-Database-Project.git](https://github.com/emilgeorgemathew/Amtrak-Database-Project.git)
+    git clone https://github.com/emilgeorgemathew/Amtrak-Database-Project.git
     cd Amtrak-Database-Project
     ```
 2.  **Database Setup (Microsoft SQL Server):**
@@ -28,7 +28,7 @@ To set up and explore the Amtrak Performance Database, follow these steps:
 4. [Database Design](#database-design)
 5. [Contents](#contents)
 6. [Key Insights](#key-insights)
-7. [Visualizations](#visualizations)
+7. [SQL Query, visualizations, findings and impact](#sql-query-visualizations-findings-and-impact)
 8. [Recommendations](#recommendations)
 9. [Tech Stack](#tech-stack)
 10. [Credits](#credits)
