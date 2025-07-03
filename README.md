@@ -1,6 +1,26 @@
 # DataForge: Analyzing Amtrak Performance Data 🚆
 DataForge is a comprehensive SQL database project that designs a normalized, referentially-integrated database to analyze Amtrak operations across U.S. states. Through advanced data modeling and interactive Business Intelligence visualizations, this project delivers actionable insights on ridership trends, procurement distribution, on-time performance, and employment budgets to support strategic decision-making.
 
+# Getting Started 🚀
+
+To set up and explore the Amtrak Performance Database, follow these steps:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/emilgeorgemathew/Amtrak-Database-Project.git](https://github.com/emilgeorgemathew/Amtrak-Database-Project.git)
+    cd Amtrak-Database-Project
+    ```
+2.  **Database Setup (Microsoft SQL Server):**
+    * Open **Microsoft SQL Server Management Studio (SSMS)**.
+    * Connect to your SQL Server instance.
+    * Execute the `BUDT703_Project_0507_13_DDL.sql` script. This script will create the necessary database, tables, and populate them with initial data.
+3.  **Run Analysis Queries:**
+    * Execute the queries in `BUDT_Project_0507_13_DML.sql` within SSMS to extract key business insights from the populated database.
+4.  **Explore Visualizations (Tableau):**
+    * Open `BUDT_Project_0507_13_Tableau.twb` using **Tableau Desktop**.
+    * Ensure Tableau is connected to your SQL Server database where you set up the project. You may need to update the connection details within Tableau to point to your local database.
+
+
 # Table of contents
 1. [Overview](#overview)
 2. [Data Source and Preprocessing](#data-source-and-preprocessing)
