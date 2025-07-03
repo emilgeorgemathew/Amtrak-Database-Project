@@ -26,8 +26,7 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 - Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
 - Create intreactive visualizations to convey insights from the raw data by connecting the database to Tableau for Business Intelligence(BI). 
 - Provide actionable recommendations for Amtrak stakeholders by storytelling and presenting the visualizations.
-
-Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
+- Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
 
 # Data Source and Preprocessing
 1. **Amtrak Data**:
