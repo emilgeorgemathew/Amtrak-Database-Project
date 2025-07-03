@@ -59,13 +59,20 @@ Here's a visual representation of the final schema design:
 # Database Design 🧩
 The project is based on a well-structured relational model with the following key entities:
 
-State(stateCode, stateName)
+State(stateCode, stateName) 
+
 Station(stationCode, stationName, stateCode)
+
 Route(routeID, routeName, routeType)
+
 OnTimePerformance(routeID, stationCode, otpYear, otpValue)
+
 Budget(budgetYearID, budgetType, budgetPlanYear, budgetTotal)
+
 AllocatedBudget(stationCode, budgetYearID, allocatedBudgetYear, allocatedBudget)
+
 StateMetrics(stateCode, stateMetric, stateMetricYear, stateMetricValue)
+
 StationMetrics(stationCode, stationMetric, stationMetricYear, stationMetricValue)
 
 Referential integrity and cascading rules are enforced to maintain data consistency during updates and deletions.
