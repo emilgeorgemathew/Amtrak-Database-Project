@@ -33,7 +33,7 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 - Merged from real Amtrak references and [fact sheets](https://www.amtrak.com/state-fact-sheets).
 - Sourced and merged data from multiple data sources like Amtrak stats and supplementary info (state codes, station codes and city).
 - All suplementary sources were merged onto the main dataset to handle missing data points like station codes or city names.
-- Reformatted and standardized into a single Excel file: Amtrack.xlsx.
+- Reformatted and standardized into a single Excel file: Amtrak.xlsx.
 
 2. **Schema Design**:
 - Designed a normalized schema with x main tables: State, Station, Ridership, Employee, GuestRewards.
