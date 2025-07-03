@@ -147,6 +147,8 @@ FROM HighestBudgetPerYear
 WHERE BudgetRank = 1
 ORDER BY Budget_Year ASC;
 ```
+**Visualization**:
+![viz1](https://github.com/user-attachments/assets/a9b91754-983b-477b-9de5-0747373bccee)
 
 * **Insights:**
     * Budget allocations vary significantly year-over-year.
