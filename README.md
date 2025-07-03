@@ -40,39 +40,32 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 - Used primary/foreign keys and cascading referential integrity rules.
 
 3. **Import to SQL**:
-- Each sheet was a table in the database.
+- Each sheet in the final Excel file was a table in the database.
 - Used DML, DCL queries to create tables for data and management.
 
 # Entity-Relationship Diagram(ERD)
 Here's a visual representation of the final schema design:
 ![ERD](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/ERD.png)
 
-- State: Central dimension table with stateCode as primary key, containing state-level geographic data
-- Station: Connected to State via "Located" relationship, contains station-level operational data
-- Route: Dimension table with route classifications (routeType) for performance analysis
-- Budget: Financial planning data with budget types and yearly allocations
-- On Time Performance: Fact table linking Route and Station with temporal performance metrics (otpYear, otpValue)
-- Allocated Budget: Bridge table connecting Budget to Station for resource allocation tracking
-- Station Metrics: Comprehensive fact table containing station-level performance metrics over time
-- State Metrics: Aggregated state-level metrics for high-level analysis and reporting
+- **State**: Central dimension table with stateCode as primary key, containing state-level geographic data
+- **Station**: Connected to State via "Located" relationship, contains station-level operational data
+- **Route**: Dimension table with route classifications (routeType) for performance analysis
+- **Budget**: Financial planning data with budget types and yearly allocations
+- **On Time Performance**: Fact table linking Route and Station with temporal performance metrics (otpYear, otpValue)
+- **Allocated Budget**: Bridge table connecting Budget to Station for resource allocation tracking
+- **Station Metrics**: Comprehensive fact table containing station-level performance metrics over time
+- **State Metrics**: Aggregated state-level metrics for high-level analysis and reporting
 
 # Database Design 🧩
 The project is based on a well-structured relational model with the following key entities:
 
 State(stateCode, stateName)
-
 Station(stationCode, stationName, stateCode)
-
 Route(routeID, routeName, routeType)
-
 OnTimePerformance(routeID, stationCode, otpYear, otpValue)
-
 Budget(budgetYearID, budgetType, budgetPlanYear, budgetTotal)
-
 AllocatedBudget(stationCode, budgetYearID, allocatedBudgetYear, allocatedBudget)
-
 StateMetrics(stateCode, stateMetric, stateMetricYear, stateMetricValue)
-
 StationMetrics(stationCode, stationMetric, stationMetricYear, stationMetricValue)
 
 Referential integrity and cascading rules are enforced to maintain data consistency during updates and deletions.
