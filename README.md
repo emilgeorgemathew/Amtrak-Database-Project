@@ -48,15 +48,14 @@ Present insights on budget allocations (Design, Construction, Deployment) over t
 Here's a visual representation of the final schema design:
 ![ERD](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/ERD.png)
 
-State: Central dimension table with stateCode as primary key, containing state-level geographic data
-Station: Connected to State via "Located" relationship, contains station-level operational data
-Route: Dimension table with route classifications (routeType) for performance analysis
-Budget: Financial planning data with budget types and yearly allocations
-OnTimePerformance: Fact table linking Route and Station with temporal performance metrics (otpYear, otpValue)
-AllocatedBudget: Bridge table connecting Budget to Station for resource allocation tracking
-StationMetrics: Comprehensive fact table containing station-level performance metrics over time
-StateMetrics: Aggregated state-level metrics for high-level analysis and reporting
-
+- State: Central dimension table with stateCode as primary key, containing state-level geographic data
+- Station: Connected to State via "Located" relationship, contains station-level operational data
+- Route: Dimension table with route classifications (routeType) for performance analysis
+- Budget: Financial planning data with budget types and yearly allocations
+- On Time Performance: Fact table linking Route and Station with temporal performance metrics (otpYear, otpValue)
+- Allocated Budget: Bridge table connecting Budget to Station for resource allocation tracking
+- Station Metrics: Comprehensive fact table containing station-level performance metrics over time
+- State Metrics: Aggregated state-level metrics for high-level analysis and reporting
 
 # Database Design 🧩
 The project is based on a well-structured relational model with the following key entities:
