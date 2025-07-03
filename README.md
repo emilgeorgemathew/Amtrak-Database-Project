@@ -1,7 +1,7 @@
 # DataForge: Analyzing Amtrak Performance Data 🚆
-DataForge is a comprehensive data analysis project built around Amtrak’s station-level and state-level performance data from 2021 to 2023. Using a custom-designed relational database and insightful SQL queries, the project uncovers key operational patterns and performance bottlenecks related to ridership, budgeting, on-time performance (OTP), procurement, and employment spending across U.S. states.
+DataForge is a comprehensive SQL database project that designs a normalized, referentially-integrated database to analyze Amtrak operations across U.S. states. Through advanced data modeling and interactive Business Intelligence visualizations, this project delivers actionable insights on ridership trends, procurement distribution, on-time performance, and employment budgets to support strategic decision-making.
 
-# Table of content
+# Table of contents
 1. [Overview](#overview)
 2. [Data Source and Preprocessing](#data-source-and-preprocessing)
 3. [Project Objectives](#project-objectives)
@@ -18,13 +18,13 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 
 1. Performance of Amtrak stations using various performance metrics like ridership, on-time performance, and budgeting across different stations in various states.
 2. Amtrak's last 3 years of data to provide insights and recommendations on budgeting and costs using on-time performance and ridership for various stations across cities.
-3. Performance, recommendations, and storytelling using intuitive visualizations and data-driven decisions.
-
+3. Performance, recommendations, and storytelling using intuitive visualizations to make recommendations and data-driven decisions to Amtrak stakeholders.
 
 # Project Objectives 🎯
 - Design a normalized and referentially-integrated SQL database.
-- Analyze ridership trends, procurement distribution, OTP by route types, and employment budgets. 
-- Provide actionable recommendations for Amtrak management by creatingusing data storytelling in Tableau.
+- Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
+- Create intreactive visualizations to convey insights from the raw data by connecting the database to Tableau for Business Intelligence(BI). 
+- Provide actionable recommendations for Amtrak stakeholders by storytelling and presenting the visualizations.
 
 Present insights on budget allocations (Design, Construction, Deployment) over time and their impact.
 # Authors: 
