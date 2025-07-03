@@ -159,6 +159,20 @@ ORDER BY Budget_Year ASC;
 * **Significance:** Understanding these historical allocation trends is crucial for strategic financial planning, optimizing resource distribution between different project phases (construction, deployment, design), and ensuring future budgets align with long-term strategic goals for efficiency and cost-effectiveness.
 
 **2. Average On-Time Performance (OTP) by Route Type:**
+
+**Query**:
+```sql
+SELECT r.routeType AS 'Route Type', ROUND(AVG(o.otpValue),4) AS 'Average OTP'
+FROM [Amtrak.Route] r
+INNER JOIN [Amtrak.OnTimePerformance] o
+ON r.routeId = o.routeId
+GROUP BY r.routeType
+ORDER BY ROUND(AVG(o.otpValue),2) DESC
+```
+**Visualization**:
+
+![viz2](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/viz2.png)
+
 * **Insights:**
     * The "Northeast Corridor" consistently exhibits the highest average OTP at 0.8349.
     * "State Supported" routes perform well with an average OTP of 0.7872, only slightly below the Northeast Corridor.
@@ -166,6 +180,21 @@ ORDER BY Budget_Year ASC;
 * **Significance:** This breakdown highlights critical areas for operational improvement. Addressing the low OTP in Long-Distance routes is essential for enhancing customer satisfaction and operational efficiency, while the success of the Northeast Corridor offers best practices that can be explored for replication.
 
 **3. Top 5 States with Highest Ridership:**
+
+**Query**:
+```sql
+SELECT TOP 5 t.stateCode AS State_Code, s.stateName AS State_Name, SUM(m.stationMetricValue) AS Total_Ridership
+FROM [Amtrak.StationMetrics] m
+JOIN [Amtrak.Station] t ON m.stationCode = t.stationCode
+JOIN [Amtrak.State] s ON t.stateCode = s.stateCode
+WHERE m.stationMetric = 'Ridership'
+GROUP BY t.stateCode, s.stateName
+ORDER BY Total_Ridership DESC
+```
+**Visualization**:
+
+![viz2](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/viz3.png)
+
 * **Insights:**
     * New York leads by a significant margin with over 27.5 million total ridership, followed by California with approximately 18.1 million.
     * Pennsylvania (approx. 11.9 million), District of Columbia (approx. 10.1 million), and Illinois (approx. 9.2 million) also demonstrate substantial ridership numbers.
@@ -173,19 +202,35 @@ ORDER BY Budget_Year ASC;
 * **Significance:** Identifying high-ridership states helps in prioritizing service quality and infrastructure investment in these crucial markets. It also provides insights into successful strategies that can be analyzed and potentially applied to states with lower ridership to drive growth.
 
 **4. Total Procurement Spending by State:**
+
+**Query**:
+```sql
+SELECT m.stateCode AS State_Code, t.stateName AS State_Name, SUM(m.stateMetricValue) AS Total_Procurement_Spending
+FROM [Amtrak.StateMetrics] m
+JOIN [Amtrak.State] t ON m.stateCode = t.stateCode
+WHERE m.stateMetric = 'Procurement'
+GROUP BY m.stateCode, t.stateName
+ORDER BY Total_Procurement_Spending DESC;
+```
+**Visualization**:
+
+![viz2](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/viz4.png)
+
 * **Insights:**
     * California leads in total procurement spending with over $1.35 billion, closely followed by New York with approximately $1.34 billion, and Pennsylvania with $1.03 billion.
     * There are significant regional disparities in spending, with major coastal states showing high expenditures, while many central states have considerably lower spending.
 * **Significance:** Analyzing procurement spending trends across states can identify opportunities for cost efficiencies, strategic resource reallocation to potentially underfunded regions, and optimization of procurement practices based on the observed patterns in high-spending states.
 
 # Recommendations 🧠
-Optimize budget allocations by aligning spending with operational outcomes.
+- Optimize Construction Budget: Review escalating "Construction" allocations (post-2020) for operational benefits and ensure balanced funding with "Design" and "Deployment" phases for efficient project pipelines.
 
-Improve OTP on long-distance routes through better scheduling and maintenance.
+- Improve Long-Distance OTP: Implement targeted interventions like infrastructure upgrades, optimized scheduling, and enhanced maintenance for "Long Distance" routes to boost their on-time performance.
 
-Leverage high-ridership states to pilot new service improvements or technologies.
+- Replicate OTP Success: Analyze and replicate best practices from high-performing "Northeast Corridor" and "State Supported" routes to improve punctuality across the network.
 
-Reassess procurement efficiency in top-spending states to reduce costs.
+- Invest in High-Ridership States: Prioritize investment in service quality and capacity for top-ridership states (New York, California) and adapt their success strategies to boost ridership in other states.
+
+- Audit Procurement Spending: Conduct comprehensive audits in high-expenditure states (California, New York, Pennsylvania) for cost efficiencies and evaluate procurement needs in lower-spending states for potential resource redistribution or optimized practices.
 
 # Tech Stack
 
