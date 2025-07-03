@@ -22,7 +22,7 @@ To set up and explore the Amtrak Performance Database, follow these steps:
 
 
 # Table of contents
-# Table of contents
+
 1. [Overview](#overview)
 2. [Data Source and Pre-processing](#data-source-and-pre-processing)
 3. [Project Objectives](#project-objectives)
