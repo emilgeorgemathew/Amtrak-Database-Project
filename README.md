@@ -222,7 +222,7 @@ ORDER BY Total_Procurement_Spending DESC;
     * There are significant regional disparities in spending, with major coastal states showing high expenditures, while many central states have considerably lower spending.
 * **Significance:** Analyzing procurement spending trends across states can identify opportunities for cost efficiencies, strategic resource reallocation to potentially underfunded regions, and optimization of procurement practices based on the observed patterns in high-spending states.
 
-# Recommendations 🧠
+# Recommendations
 - Optimize Construction Budget: Review escalating "Construction" allocations (post-2020) for operational benefits and ensure balanced funding with "Design" and "Deployment" phases for efficient project pipelines.
 
 - Improve Long-Distance OTP: Implement targeted interventions like infrastructure upgrades, optimized scheduling, and enhanced maintenance for "Long Distance" routes to boost their on-time performance.
