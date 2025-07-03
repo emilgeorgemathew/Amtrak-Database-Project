@@ -20,6 +20,7 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 2. Amtrak's last 3 years of data to provide insights and recommendations on budgeting and costs using on-time performance and ridership for various stations across cities.
 3. Performance, recommendations, and storytelling using intuitive visualizations to make recommendations and data-driven decisions to Amtrak stakeholders.
 
+![Pictures](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/Project%20Diagram.png)
 # Project Objectives 🎯
 - Design a normalized and referentially-integrated SQL database.
 - Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
