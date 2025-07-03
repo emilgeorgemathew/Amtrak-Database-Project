@@ -123,15 +123,36 @@ Procurement Trends: California, New York, and Pennsylvania account for the highe
 Employment Spend: Varies widely by state, with implications for workforce optimization.
 
 # Visualizations 📊
-The Tableau dashboards provide:
 
-Comparative ridership by state and station.
+Our interactive Tableau dashboards provide key insights into Amtrak's performance:
 
-OTP breakdown by route type.
+**1. Budget Allocation by Type (2016-2023):**
+* **Insights:**
+    * Budget allocations vary significantly year-over-year.
+    * "Construction" dominated the highest allocated budget from 2020 to 2023, peaking notably in 2022 with $95.77 million, indicating a strong focus on infrastructure projects.
+    * "Design" consistently received lower allocations across most years, with a high of $2.379 million in 2016 and a low of $1.0 million in 2023.
+    * "Deployment" showed a peak in 2019 at $8.636 million, but declined in later years, suggesting a shift in strategic priorities.
+* **Significance:** Understanding these historical allocation trends is crucial for strategic financial planning, optimizing resource distribution between different project phases (construction, deployment, design), and ensuring future budgets align with long-term strategic goals for efficiency and cost-effectiveness.
 
-Yearly trends in budget allocations.
+**2. Average On-Time Performance (OTP) by Route Type:**
+* **Insights:**
+    * The "Northeast Corridor" consistently exhibits the highest average OTP at 0.8349.
+    * "State Supported" routes perform well with an average OTP of 0.7872, only slightly below the Northeast Corridor.
+    * "Long Distance" routes significantly lag behind, showing a low average OTP of 0.4896, indicating considerable delays.
+* **Significance:** This breakdown highlights critical areas for operational improvement. Addressing the low OTP in Long-Distance routes is essential for enhancing customer satisfaction and operational efficiency, while the success of the Northeast Corridor offers best practices that can be explored for replication.
 
-Heatmaps of employment and procurement data.
+**3. Top 5 States with Highest Ridership:**
+* **Insights:**
+    * New York leads by a significant margin with over 27.5 million total ridership, followed by California with approximately 18.1 million.
+    * Pennsylvania (approx. 11.9 million), District of Columbia (approx. 10.1 million), and Illinois (approx. 9.2 million) also demonstrate substantial ridership numbers.
+    * These states represent key urban transit hubs for Amtrak.
+* **Significance:** Identifying high-ridership states helps in prioritizing service quality and infrastructure investment in these crucial markets. It also provides insights into successful strategies that can be analyzed and potentially applied to states with lower ridership to drive growth.
+
+**4. Total Procurement Spending by State:**
+* **Insights:**
+    * California leads in total procurement spending with over $1.35 billion, closely followed by New York with approximately $1.34 billion, and Pennsylvania with $1.03 billion.
+    * There are significant regional disparities in spending, with major coastal states showing high expenditures, while many central states have considerably lower spending.
+* **Significance:** Analyzing procurement spending trends across states can identify opportunities for cost efficiencies, strategic resource reallocation to potentially underfunded regions, and optimization of procurement practices based on the observed patterns in high-spending states.
 
 # Recommendations 🧠
 Optimize budget allocations by aligning spending with operational outcomes.
