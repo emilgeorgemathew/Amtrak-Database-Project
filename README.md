@@ -44,7 +44,7 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 
 ![Pictures](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/Project%20Diagram.png)
 
-## Project Objectives 🎯
+## Project Objectives
 - Design a normalized and referentially-integrated SQL database.
 - Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
 - Create interactive visualizations to convey insights from the raw data by connecting the database to Tableau for Business Intelligence(BI). 
@@ -79,7 +79,7 @@ Here's a visual representation of the final schema design:
 - **Station Metrics**: Comprehensive fact table containing station-level performance metrics over time
 - **State Metrics**: Aggregated state-level metrics for high-level analysis and reporting
 
-## Database Design 🧩
+## Database Design
 The project is based on a well-structured relational model with the following key entities:
 
 State(stateCode, stateName) 
@@ -100,7 +100,7 @@ StationMetrics(stationCode, stationMetric, stationMetricYear, stationMetricValue
 
 Referential integrity and cascading rules are enforced to maintain data consistency during updates and deletions.
 
-## Contents 📁
+## Contents
 
 BUDT703_Project_0507_13_DDL.sql	SQL script for creating and populating the Amtrak database schema.
 
@@ -112,7 +112,7 @@ BUDT703_Project_0507_13_Slides.pptx	Final presentation with insights, observatio
 
 BUDT_Project_0507_13_Tableau.twb	Tableau workbook with interactive dashboards and visualizations.
 
-## Key Insights 📌
+## Key Insights
 Top Ridership States: New York and California lead Amtrak ridership, indicating crucial hubs.
 
 On-Time Performance: Northeast Corridor has the highest OTP, while Long-Distance routes lag.
@@ -123,7 +123,7 @@ Procurement Trends: California, New York, and Pennsylvania account for the highe
 
 Employment Spend: Varies widely by state, with implications for workforce optimization.
 
-## SQL Query, visualizations, findings and impact 📊
+## SQL Query, visualizations, findings and impact
 
 Our interactive Tableau dashboards provide key insights into Amtrak's performance:
 
