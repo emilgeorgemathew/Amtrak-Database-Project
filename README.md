@@ -13,6 +13,7 @@ DataForge is a comprehensive SQL database project that designs a normalized, ref
 9. [Tech Stack](#tech-stack)
 10. [Credits](#credits)
 
+
 ## Overview
 This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Performance and Employees to analyze:
 
@@ -21,6 +22,7 @@ This project models Amtrak data - Ridership, Guest Rewards, Stations, On-Time Pe
 3. Performance, recommendations, and storytelling using intuitive visualizations to make recommendations and data-driven decisions to Amtrak stakeholders.
 
 ![Pictures](https://github.com/emilgeorgemathew/Amtrak-Database-Project/blob/main/Project%20Diagram.png)
+
 # Project Objectives 🎯
 - Design a normalized and referentially-integrated SQL database.
 - Analyze ridership trends, procurement distribution, on-time performance by route types, and employment budgets.
@@ -132,24 +134,5 @@ GitHub (Version Control & Publishing)
 2. Emil George Mathew  - Data Preprocessing, Database Implementation & Querying (including DML, DCL, DQL), business problem formation, leadership and slides.
 3. Abhishek Bhosale - SQL queries, leadership, business problem formation and data visualization.
 4. Henry Kangten - Data visualization and reports.
-
-# Getting Started 🚀
-
-To set up and explore the Amtrak Performance Database, follow these steps:
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/emilgeorgemathew/Amtrak-Database-Project.git](https://github.com/emilgeorgemathew/Amtrak-Database-Project.git)
-    cd Amtrak-Database-Project
-    ```
-2.  **Database Setup (Microsoft SQL Server):**
-    * Open **Microsoft SQL Server Management Studio (SSMS)**.
-    * Connect to your SQL Server instance.
-    * Execute the `BUDT703_Project_0507_13_DDL.sql` script. This script will create the necessary database, tables, and populate them with initial data.
-3.  **Run Analysis Queries:**
-    * Execute the queries in `BUDT_Project_0507_13_DML.sql` within SSMS to extract key business insights from the populated database.
-4.  **Explore Visualizations (Tableau):**
-    * Open `BUDT_Project_0507_13_Tableau.twb` using **Tableau Desktop**.
-    * Ensure Tableau is connected to your SQL Server database where you set up the project. You may need to update the connection details within Tableau to point to your local database.
 
 Thank you for checking out this project.
